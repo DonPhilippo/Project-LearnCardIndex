@@ -9,7 +9,7 @@ import javafx.scene.control.PasswordField;
 public class Controller {
 
 
-    public Controller(){
+    public Controller() {
         System.out.println("Controller funzt");
     }
 
@@ -25,8 +25,8 @@ public class Controller {
     private PasswordField txtLoginPassword;
 
     @FXML
-    void loginAction(ActionEvent event) {
-        System.out.println("OK");
+    void loginAction(ActionEvent event) throws Exception {
+        MainMenuController mainController = new
     }
 
     @FXML
@@ -35,8 +35,9 @@ public class Controller {
     }
 
     @FXML
-    void registerAction(ActionEvent event) {
-        System.out.println("Regstrieren");
+    void registerAction(ActionEvent event) throws Exception {
+        RegisterController regController = new RegisterController();
+        regController.construct();
     }
 
 }
